@@ -24,8 +24,11 @@ https://confyde-app.netlify.app/
 - local environment must have node installed  https://nodejs.org/en/download/
 - local environment must have npm installed globally https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 3fe0a21d8a72fb6aa14f0212fc796fe09de791c5
 ## development
 
 ### 0. setup
