@@ -17,6 +17,8 @@ The applications helps to connect doctors with patients
 
 https://confyde-app.netlify.app/
 
+
+
 ## dependencies
 
 - local environment must have node installed  https://nodejs.org/en/download/
