@@ -1,25 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route, Redirect, Switch} from "react-router-dom";
 import './App.css';
+import Navbar from './pages/Navbar';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Home from './pages/Home';
+import NotFound from "./pages/NotFound";
+import FindADoctor from './pages/FindADoctor';
+import About from "./pages/About";
+import Services from "./pages/Services";
+
+//import "./App.css";
+
+// Import Scss
+import "./theme.scss";
+
+//Import Icon Css
+import "./assets/css/materialdesignicons.min.css";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Confyde Medical App project.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Comming Soon...!!!
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <main className="container">
+        <Switch>
+          <Route path="/home" component={Home} />
+          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
+          <Route path="/services" component={Services} />
+          <Route path="/find-a-doctor" component={FindADoctor} />
+          <Route path="/about-us" component={About}></Route>
+          <Route path="/not-found" component={NotFound}></Route>
+          <Redirect from="/" exact to="/home" />
+          <Redirect to="/not-found" />
+        </Switch>
+      </main>
+    </>
   );
 }
 
