@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 //Import Images
-import homeImg from "../../assets/images/home-img.png";
+import homeImg from "../../assets/images/undraw1.svg";
 
 class BannerSection extends Component {
   render() {

@@ -32,20 +32,20 @@ class AppContainer extends Component {
 
     render() {
         return (
-            <>
+          <>
             <NavbarContainer />
-                <main className="container">
-            <Switch>
-             <Route path="/login" component={Login} />
-             <Route path="/getting-started" component={GettingStarted} />
-             <Redirect from ="/" exact to="home" />
-            </Switch>
+            <main className="container">
+              <Switch>
+                <Route path="/login" component={Login} />
+                <Route path="/getting-started" component={GettingStarted} />
+                <Redirect from="/" exact to="home" />
+              </Switch>
 
-            {/*Importing Banner section */}
-            <BannerSection />
-            
-            </main>    
-            </>
+              {/*Importing Banner section */}
+              <BannerSection />
+              <BannerSection />
+            </main>
+          </>
         );
     }
 }
