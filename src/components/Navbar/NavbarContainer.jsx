@@ -70,7 +70,7 @@ class NavbarContainer extends Component {
                           color="success"
                           className="btn-rounded navbar-btn"
                         >
-                          Find A Doctor
+                          Get started
                         </Button>
 
                   </Nav>

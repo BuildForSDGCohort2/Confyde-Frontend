@@ -16,29 +16,29 @@ class Services extends Component {
           desc: "Same-day appointments, in-person or remote, that start on time",
         },
         {
-          icon: "compass",
+          icon: "message-square",
           title: "Easy Chat",
           desc: "Unlimited 24/7 Video Chats with our virtual medical team at no extra cost",
         },
         {
-          icon: "headphones",
+          icon: "map-pin",
           title: "Locate Us",
           desc:
             "Convenient locations with drop-in labs across Africa",
         },
         {
-          icon: "layers",
+          icon: "book",
           title: "Book an appointment",
           desc: "Easy appointment booking with a doctor in seconds.",
         },
         {
-          icon: "code",
+          icon: "info",
           title: "Diagnosis & test",
           desc: "Easy access to COVID-19 testing and care.",
         },
         {
-          icon: "tablet",
-          title: "Responsive layout",
+          icon: "activity",
+          title: "Rapid response",
           desc: "Our experts will help get quality healthcare",
         },
       ],
