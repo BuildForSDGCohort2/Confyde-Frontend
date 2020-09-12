@@ -1,23 +1,4 @@
 
-/*
-Template Name: Invoza - Bootstrap 4 Landing Page Tamplat
-Author: Themesdesign
-File: Main scss file
-*/
-
-/*******************************
-1.General
-2.Helper
-3.Navbar
-4.Hero section
-5.Testimonial
-6.Pricing
-7.Subscribe
-8.Footer
-9.Responsive
-********************************/
-
-
 @import "variables";
 
 /*******************
@@ -48,7 +29,7 @@ a {
 
 p{
     line-height: 1.8;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 /*******************
@@ -142,7 +123,7 @@ $value in $colors {
         color: $white;
         background: #{$value};
         border-color: #{$value};
-        box-shadow: 0 8px 14px rgba($value, 0.2);
+        box-shadow: 0 8px 14px rgba($value, 8);
 
         &:hover, &:focus, &:active,
         &.active, &.focus, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled):active:focus,
@@ -215,8 +196,8 @@ $value in $colors {
 }
 
 .avatar-md {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
 }
 
 .avatar-title {
@@ -265,16 +246,17 @@ $value in $colors {
 
     .navbar-btn{
         margin-left: 10px;
-        color: $success;
-        background: rgba($success, 0.2);
+        color: white;
+        background: rgba($primary, 1);
         border-color: transparent;
         box-shadow: none;
+        border-radius: 20px;
 
         &:hover{
             color: $white;
             box-shadow: 0px 16px 31px -16px $success;
-            background: darken($success, 4%);
-            border-color: darken($success, 4%);
+            background: darken($primary, 4%);
+            border-color: darken($primary, 4%);
         }
     }
 }
@@ -370,6 +352,7 @@ $value in $colors {
 .hero-section {
     padding-top: 275px;
     overflow: hidden;
+    background:#e6e6ff;
 }
 
 .home-img{
@@ -380,7 +363,7 @@ $value in $colors {
         position: absolute;
         width: 360px;
         height: 330px;
-        background-color: rgba($primary, 0.1);
+        background-color: rgba($primary, 1);
         border-radius: 30% 70% 59% 41% / 30% 38% 62% 70%;
         z-index: -1;
         top: 90px;
@@ -507,34 +490,7 @@ $value in $colors {
 }
 
 
-/******************
-    6.Pricing
-*******************/
 
-.pricing-nav-tabs{
-    display: inline-block;
-    background-color: $white;
-    box-shadow: $box-shadow;
-    padding: 5px;
-    border-radius: 7px;
-    li{
-        display: inline-block;
-        .nav-link{
-            border-radius: 7px;
-            color: $body-color;
-            padding: .6rem 1.4rem;
-            &.active{
-                background-color: $primary;
-            }
-        }
-    }
-}
-
-.pricing-plan{
-    max-width: 415px;
-    margin: 0px auto;
-    margin-top: 30px;
-}
 
 /******************
     7.Subscribe

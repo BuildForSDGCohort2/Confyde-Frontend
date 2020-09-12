@@ -8,24 +8,21 @@ import homeImg from "../../assets/images/undraw1.svg";
 class BannerSection extends Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <section className="hero-section" id="home">
           <Container>
             <Row className="justify-content-center">
               <Col lg={6}>
                 <div className="hero-wrapper mb-4">
-                 
-                  <h3 className="hero-title mb-4">
-                    We are the leading healthcare soltion in Africa{" "}
-                    <span className="text-primary">Confyde</span>
-                  </h3>
+                  <h1 className="hero-title mb-4">
+                    We are the leading healthcare solution provider {" "}
+                    <span className="text-primary">in Africa</span>
+                  </h1>
 
-                  <p>
-                    Get Affordable quality health care. Speak to a doctor.
-                  </p>
+                  <p>Get Affordable quality health care. Speak to a doctor.</p>
 
-                  <div className="mt-4">
-                    <Link to="#" className="btn btn-primary mt-2 mr-2">
+                  <div className="mt-4 rounded">
+                    <Link to="#" className="btn btn-primary mt-2 mr-2" style={{borderRadius: "20px" }}>
                       Geting Started
                     </Link>
                   </div>
@@ -44,7 +41,7 @@ class BannerSection extends Component {
             </Row>
           </Container>
         </section>
-      </React.Fragment>
+      </>
     );
   }
 }

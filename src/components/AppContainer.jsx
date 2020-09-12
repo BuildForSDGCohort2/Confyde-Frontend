@@ -4,6 +4,7 @@ import NavbarContainer from "./Navbar/NavbarContainer";
 import Login from "../pages/Login";
 import BannerSection from "../components/Banner/BannerSection";
 import GettingStarted from './../pages/GettingStarted';
+import Services from './../components/services/Services';
 
 class AppContainer extends Component {
     
@@ -33,8 +34,7 @@ class AppContainer extends Component {
     render() {
         return (
           <>
-            <NavbarContainer />
-            <main className="container">
+            <NavbarContainer navClass={this.state.navClass} imglight={this.state.imglight} />
               <Switch>
                 <Route path="/login" component={Login} />
                 <Route path="/getting-started" component={GettingStarted} />
@@ -43,8 +43,7 @@ class AppContainer extends Component {
 
               {/*Importing Banner section */}
               <BannerSection />
-              <BannerSection />
-            </main>
+              <Services />
           </>
         );
     }

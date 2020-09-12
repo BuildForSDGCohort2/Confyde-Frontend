@@ -29,50 +29,55 @@ class NavbarContainer extends Component {
 
     render() {
         return (
-            <>
-          <Navbar 
-          expand ="lg"
-          fixed="top"
-          className={"navbar-custom sticky sticky sticky-dark " + this.props.navClass}
-          >
-         <Container>
-          <NavbarBrand className="logo text-uppercase" href="/">
-              {this.props.imglight === true ? (
-                  <img 
-                  src={logolight}
-                  alt=""
-                  className="logo-light"
-                  height="40"
-                   />
-              ) : (
-                  <img src={logodark} alt="" className="logo-dark" height="40" />
-              )}
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle}>
-              <i className="mdi mdi-menu"></i>
-          </NavbarToggler>
-          <Collapse id="navbarCollapse" isOpen={this.state.isOpen} navbar>
+          <>
+            <Navbar
+              expand="lg"
+              fixed="top"
+              className={
+                "navbar-custom sticky sticky sticky-dark " + this.props.navClass
+              }
+            >
+              <Container>
+                <NavbarBrand className="logo text-uppercase" href="/">
+                  {this.props.imglight === true ? (
+                    <img
+                      src={logolight}
+                      alt=""
+                      className="logo-light"
+                      height="90"
+                    />
+                  ) : (
+                    <img
+                      src={logodark}
+                      alt=""
+                      className="logo-dark"
+                      height="70"
+                    />
+                  )}
+                </NavbarBrand>
+                <NavbarToggler onClick={this.toggle}>
+                  <i className="mdi mdi-menu"></i>
+                </NavbarToggler>
+                <Collapse id="navbarCollapse" isOpen={this.state.isOpen} navbar>
+                  <Nav navbar className="ml-auto navbar-center" id="mySidenav">
+                    <NavItem>
+                      <NavLink href="/home" to="/home">
+                        Login
+                      </NavLink>
+                    </NavItem>
+                  
+                        <Button
+                          color="success"
+                          className="btn-rounded navbar-btn"
+                        >
+                          Find A Doctor
+                        </Button>
 
-             <Nav navbar className="ml-auto navbar-center" id="mySidenav">
-             <NavItem>
-                 <NavLink href="/home" to="/home">
-                     Login
-                 </NavLink>
-             </NavItem>
-            <NavItem>
-                <NavLink href="/getting-started" to="/getting-started">
-                    Getting started
-            </NavLink>
-            </NavItem>
-            <Button color="success" className="btn-rounded navbar-btn">
-            Find A Doctor
-              </Button>
-             </Nav> 
-          </Collapse>
-        </Container>     
-          </Navbar>
-
-            </>
+                  </Nav>
+                </Collapse>
+              </Container>
+            </Navbar>
+          </>
         );
     }
 }
