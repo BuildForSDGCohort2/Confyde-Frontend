@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {Route, Redirect, Switch } from "react-router-dom";
 import NavbarContainer from "./Navbar/NavbarContainer";
 import Login from "../pages/Login";
@@ -7,7 +7,7 @@ import GettingStarted from './../pages/GettingStarted';
 import Services from './../components/services/Services';
 
 class AppContainer extends Component {
-    
+
     state = {
         pos: document.documentElement.scrollTop,
         imglight: false,
@@ -34,6 +34,7 @@ class AppContainer extends Component {
     render() {
         return (
           <>
+                {/*Importing Navbar */}
             <NavbarContainer navClass={this.state.navClass} imglight={this.state.imglight} />
               <Switch>
                 <Route path="/login" component={Login} />
@@ -43,7 +44,9 @@ class AppContainer extends Component {
 
               {/*Importing Banner section */}
               <BannerSection />
+                {/*Importing Services section */}
               <Services />
+             
           </>
         );
     }

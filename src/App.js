@@ -1,5 +1,5 @@
-import React from 'react'
-import AppContainer from './components/AppContainer'
+import React from "react"
+import AppContainer from "./components/AppContainer"
 import "./App.css";
 //import Scss
 import "./theme.scss";

@@ -5,7 +5,7 @@ import FeatherIcon from "feather-icons-react";
 class ServiceBox extends Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         {this.props.services.map((service, key) => (
           <Col xl={4} sm={6} key={key}>
             <Card>
@@ -28,7 +28,7 @@ class ServiceBox extends Component {
             </Card>
           </Col>
         ))}
-      </React.Fragment>
+      </>
     );
   }
 }
