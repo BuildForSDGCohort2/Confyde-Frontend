@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 //Import Images
-import homeImg from "../../assets/images/undraw1.svg";
+import bg1 from "../../assets/images/bg-1.png";
+import homeImg from "../../assets/images/header.png";
 
 class BannerSection extends Component {
   render() {
     return (
   <>
-    <section className="hero-section" id="home">
+    <section className="hero-section" id="home" style = {{background: `url(${bg1}) center center `}}>
       <Container>
         <Row className="justify-content-center">
           <Col lg={6}>

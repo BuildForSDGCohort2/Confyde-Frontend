@@ -5,6 +5,9 @@ import Login from "../pages/Login";
 import BannerSection from "../components/Banner/BannerSection";
 import GettingStarted from './../pages/GettingStarted';
 import Services from './../components/services/Services';
+import AskQuestion from "./askQuestion/askQuestion";
+import DownloadSection from './downloadSection/downloadSection';
+import Testimonial from './testimonial/testimonial';
 
 class AppContainer extends Component {
 
@@ -34,19 +37,27 @@ class AppContainer extends Component {
     render() {
         return (
           <>
-                {/*Importing Navbar */}
-            <NavbarContainer navClass={this.state.navClass} imglight={this.state.imglight} />
-              <Switch>
-                <Route path="/login" component={Login} />
-                <Route path="/getting-started" component={GettingStarted} />
-                <Redirect from="/" exact to="home" />
-              </Switch>
+            {/*Importing Navbar */}
+            <NavbarContainer
+              navClass={this.state.navClass}
+              imglight={this.state.imglight}
+            />
+            <Switch>
+              <Route path="/login" component={Login} />
+              <Route path="/getting-started" component={GettingStarted} />
+              <Redirect from="/" exact to="home" />
+            </Switch>
 
-              {/*Importing Banner section */}
-              <BannerSection />
-                {/*Importing Services section */}
-              <Services />
-             
+            {/*Importing Banner section */}
+            <BannerSection />
+            {/*Importing Services section */}
+            <Services />
+            {/* Importing Ask Question section */}
+            <AskQuestion />
+            {/* Importing Download section */}
+            <DownloadSection />
+            {/*Importing Testimonial section */}
+            <Testimonial />
           </>
         );
     }
