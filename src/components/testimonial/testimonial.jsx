@@ -15,11 +15,6 @@ import SectionTitle from "../common/section-title";
 import TestimonialBox from "./testimonialBox";
 
 //Import Images
-import client1 from "../../assets/images/clients/james.jpg";
-import client2 from "../../assets/images/clients/faithful.jpg";
-import client3 from "../../assets/images/clients/james.jpg";
-import client4 from "../../assets/images/clients/faithful.jpg";
-//import Counter from '../Counter/counter';
 
 class Testimonial extends Component {
   state = {
