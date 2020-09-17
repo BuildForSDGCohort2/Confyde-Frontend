@@ -3,11 +3,11 @@ import {Route, Redirect, Switch } from "react-router-dom";
 import NavbarContainer from "./Navbar/NavbarContainer";
 import Login from "../pages/Login";
 import BannerSection from "../components/Banner/BannerSection";
-import GettingStarted from './../pages/GettingStarted';
-import Services from './../components/services/Services';
+import GettingStarted from "./../pages/GettingStarted";
+import Services from "./../components/services/Services";
 import AskQuestion from "./askQuestion/askQuestion";
-import DownloadSection from './downloadSection/downloadSection';
-import Testimonial from './testimonial/testimonial';
+import DownloadSection from "./downloadSection/downloadSection";
+import Testimonial from "./testimonial/testimonial";
 
 class AppContainer extends Component {
 

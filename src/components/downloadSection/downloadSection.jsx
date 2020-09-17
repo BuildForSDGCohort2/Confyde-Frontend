@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { Container, Row, Col, Card, CardBody } from "reactstrap";
 
 import DownloadSectionBox from "./downloadSectionBox";

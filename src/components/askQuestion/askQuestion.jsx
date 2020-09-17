@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { Container, Row, Col, Card, CardBody, Button} from "reactstrap";
 
-import AskQuestionBox from './askQuestionBox';
+import AskQuestionBox from "./askQuestionBox";
 //Import Images
 import questionImg from "../../assets/images/askQuestion/askQuestion.png";
 

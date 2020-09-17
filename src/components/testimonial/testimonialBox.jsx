@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardBody, Media } from "reactstrap";
 
-const TestimonialBox = (props)=> {
+const TestimonialBox = (props) => {
     return (
       <>
         {props.clients.map((client, key) => (
