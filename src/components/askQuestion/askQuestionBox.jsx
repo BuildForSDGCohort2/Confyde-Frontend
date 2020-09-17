@@ -1,8 +1,6 @@
 import React from "react";
 import { Row, Col, Button } from "reactstrap";
 import FeatherIcon from "feather-icons-react";
-
-
 const askQuestionBox = (props) => {
     return (
             <>
