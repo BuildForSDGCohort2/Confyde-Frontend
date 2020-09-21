@@ -36,12 +36,12 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-    
+     
     - name: Install
       run: npm install
     - name: Build
-      run: npm run build
+      run: npm run build --if-present
 #     - name: Test
-#       run: npm test
-    - name: Start
-      run: npm start
+#       run: npm run test
+      env:
+        CI: true
