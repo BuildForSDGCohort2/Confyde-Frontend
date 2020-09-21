@@ -12,8 +12,8 @@ import {
 } from "reactstrap";
 
 //Import  Logo Images
-import logolight from "../../assets/images/logo-1.png";
-import logodark from "../../assets/images/logo.png";
+import logolight from "../../assets/images/Logo-confyde.png";
+import logodark from "../../assets/images/Logo-confyde.png";
 
 
 class NavbarContainer extends Component {
@@ -42,14 +42,14 @@ class NavbarContainer extends Component {
                     src={logolight}
                     alt=""
                     className="logo-light"
-                    height="90"
+                    height="45"
                   />
                 ) : (
                   <img
                     src={logodark}
                     alt=""
                     className="logo-dark"
-                    height="70"
+                    height="45"
                   />
                 )}
               </NavbarBrand>
