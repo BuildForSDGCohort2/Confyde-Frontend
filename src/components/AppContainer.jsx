@@ -8,6 +8,7 @@ import Services from "./../components/services/Services";
 import AskQuestion from "./askQuestion/askQuestion";
 import DownloadSection from "./downloadSection/downloadSection";
 import Testimonial from "./testimonial/testimonial";
+import Blog from "./blog section/blog";
 
 class AppContainer extends Component {
 
@@ -58,6 +59,9 @@ class AppContainer extends Component {
             <DownloadSection />
             {/*Importing Testimonial section */}
             <Testimonial />
+           
+           <Blog />
+
           </>
         );
     }
