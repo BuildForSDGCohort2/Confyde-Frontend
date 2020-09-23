@@ -9,6 +9,7 @@ import AskQuestion from "./askQuestion/askQuestion";
 import DownloadSection from "./downloadSection/downloadSection";
 import Testimonial from "./testimonial/testimonial";
 import Blog from "./blog section/blog";
+import Footer from "./footer/footer";
 
 class AppContainer extends Component {
 
@@ -59,9 +60,11 @@ class AppContainer extends Component {
             <DownloadSection />
             {/*Importing Testimonial section */}
             <Testimonial />
-           
-           <Blog />
 
+            {/* Importing Blog */}
+            <Blog />
+            {/* Importing Footer */}
+            <Footer />
           </>
         );
     }
