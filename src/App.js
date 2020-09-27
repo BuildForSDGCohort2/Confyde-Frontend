@@ -5,7 +5,7 @@ import "./App.css";
 import "./theme.scss";
 
 //Import Icon Css
-//import "./assets/css/materialdesignicons.min.css";
+import "./assets/css/materialdesignicons.min.css";
 
 function App() {
   return (

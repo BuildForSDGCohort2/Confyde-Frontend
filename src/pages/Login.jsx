@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Form, Button } from 'reactstrap';
@@ -72,6 +73,16 @@ function Login() {
 			</div>
 		</div>
 	);
+=======
+import React from "react";
+
+const Login = () => {
+    return (
+        <div>
+          <h2>Login Page</h2>  
+        </div>
+    );
+>>>>>>> f0bf1586a619864ca5c15dd8f9951c4f1feac2c1
 }
 
 export default Login;
