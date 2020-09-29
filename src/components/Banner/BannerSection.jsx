@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 
 //Import Images
-<<<<<<< HEAD
-import homeImg from '../../assets/images/undraw1.svg';
+import bg1 from '../../assets/images/bg-1.png';
+import homeImg from '../../assets/images/header.png';
 
 class BannerSection extends Component {
 	render() {
 		return (
-			<section className="hero-section" id="home">
+			<section className="hero-section" id="home" style={{ background: `url(${bg1}) center center ` }}>
 				<Container>
 					<Row className="justify-content-center">
 						<Col lg={6}>
@@ -18,30 +18,12 @@ class BannerSection extends Component {
 									We are the leading healthcare solution provider {' '}
 									<span className="text-primary">in Africa</span>
 								</h1>
-=======
-import bg1 from "../../assets/images/bg-1.png";
-import homeImg from "../../assets/images/header.png";
-
-class BannerSection extends Component {
-  render() {
-    return (
-  <>
-    <section className="hero-section" id="home" style = {{background: `url(${bg1}) center center `}}>
-      <Container>
-        <Row className="justify-content-center">
-          <Col lg={6}>
-            <div className="hero-wrapper mb-4">
-              <h1 className="hero-title mb-4">
-                We are the leading healthcare solution provider {" "}
-                <span className="text-primary">in Africa</span>
-              </h1>
->>>>>>> f0bf1586a619864ca5c15dd8f9951c4f1feac2c1
 
 								<p>Get Affordable quality health care. Speak to a doctor.</p>
 
 								<div className="mt-4 rounded">
 									<Link to="#" className="btn btn-primary mt-2 mr-2" style={{ borderRadius: '20px' }}>
-										Geting Started
+										Getting Started
 									</Link>
 								</div>
 							</div>

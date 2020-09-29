@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Form, Button } from 'reactstrap';
@@ -18,14 +17,16 @@ function Login() {
 											<Link
 												to="#"
 												className="btn btn-primary mt-2 mr-2"
-												style={{ borderRadius: '40px' }}
+												style={{ borderRadius: '40px', fontSize: '22px' }}
 											>
 												C
 											</Link>
 										</div>
+										<br />
+										<br />
 										<h1 className="hero-title mb-4">Login</h1> <br />
 										<p>
-											Not a doctor?
+											Not a doctor?{' '}
 											<span className="text-primary">
 												<Link to="#" className="mt-2 mr-2 ">
 													Register
@@ -53,10 +54,14 @@ function Login() {
 													</Link>
 												</p>
 											</div>
+											<br />
+
 											<div className="mt-4 rounded" />
 											<Button variant="contained" color="primary">
 												Sign Up
 											</Button>
+											<br />
+											<br />
 											<p>
 												Have an account?{' '}
 												<Link to="#" className="text-primary mt-2 mr-2">
@@ -73,16 +78,6 @@ function Login() {
 			</div>
 		</div>
 	);
-=======
-import React from "react";
-
-const Login = () => {
-    return (
-        <div>
-          <h2>Login Page</h2>  
-        </div>
-    );
->>>>>>> f0bf1586a619864ca5c15dd8f9951c4f1feac2c1
 }
 
 export default Login;
