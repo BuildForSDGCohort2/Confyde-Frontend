@@ -5,17 +5,11 @@ import  Login  from "./pages/Login";
 import GettingStarted from "./pages/GettingStarted";
 import NavBar from "./components/Navbar/NavBar";
 import "./App.css";
-
 //import Scss
 import "./theme.scss";
-
 //Import Icon Css
 import "./assets/css/materialdesignicons.min.css";
-
-
-
 function App() {
-
   return (
     <>
       <NavBar />
@@ -28,6 +22,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;

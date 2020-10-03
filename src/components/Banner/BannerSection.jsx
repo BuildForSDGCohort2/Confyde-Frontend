@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
-
 //Import Images
 import bg1 from "../../assets/images/bg-1.png";
 import homeImg from "../../assets/images/header.png";
-
 class BannerSection extends Component {
   render() {
     return (

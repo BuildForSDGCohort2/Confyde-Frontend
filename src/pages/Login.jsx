@@ -10,12 +10,9 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-
 import { Link } from "react-router-dom";
-
 //Import Images
 import Logo from "../assets/images/logo/favicon.png";
-
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -28,11 +25,9 @@ function Copyright() {
     </Typography>
   );
 }
-
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "100vh",
-   
   },
   image: {
     backgroundImage:
@@ -63,7 +58,6 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(3, 0, 2),
   },
 }));
-
 export default function SignInSide() {
   const classes = useStyles();
 
@@ -88,9 +82,7 @@ export default function SignInSide() {
               name="email"
               autoComplete="email"
               autoFocus
-              
             />
-         
             <TextField
               variant="outlined"
               margin="normal"

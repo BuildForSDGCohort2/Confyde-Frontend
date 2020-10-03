@@ -8,13 +8,11 @@ import Blog from "./blog section/blog";
 import Footer from "./footer/footer";
 
 class AppContainer extends Component {
-
     state = {
         pos: document.documentElement.scrollTop,
         imglight: false,
         navClass: "",
     };
-
     componentDidMount() {
         window.addEventListener("scroll", this.scrollNavigation, true);
     }
@@ -31,7 +29,6 @@ class AppContainer extends Component {
             this.setState({ navClass: "", imglight: false });
         }
     };
-
     render() {
         return (
           <>
