@@ -1,83 +1,112 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Row, Col, Form, Button } from 'reactstrap';
-//import TextField from 'material-ui/TextField';
-//import RaisedButton from 'material/RaisedButton';
-function Login() {
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import EmailIcon from '@material-ui/icons/Email';
+import LockIcon from '@material-ui/icons/Lock';
+//import FormControlLabel from '@material-ui/core/FormControlLabel';
+//import Checkbox from '@material-ui/core/Checkbox';
+import Link from '@material-ui/core/Link';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+
+function Confyde() {
 	return (
-		<div>
-			<div>
-				<Form className="text-center">
-					<section className="hero-section-2" id="">
-						<Container>
-							<Row className="justify-content-center">
-								<Col lg={6} sm={8}>
-									<div className="hero-wrapper mb-4">
-										<div className="mt-4 rounded">
-											<Link
-												to="#"
-												className="btn btn-primary mt-2 mr-2"
-												style={{ borderRadius: '40px', fontSize: '22px' }}
-											>
-												C
-											</Link>
-										</div>
-										<br />
-										<br />
-										<h1 className="hero-title mb-4">Login</h1> <br />
-										<p>
-											Not a doctor?{' '}
-											<span className="text-primary">
-												<Link to="#" className="mt-2 mr-2 ">
-													Register
-												</Link>
-											</span>
-										</p>
-										<label>
-											<input type="phone" placeholder="Mobile Number" />
-											<br />
-											<br />
-
-											<input type="password" placeholder="Password" />
-											<br />
-
-											<div>
-												<input type="checkbox" />
-												<p>Remain anonymous</p>
-												<br />
-
-												<input type="checkbox" />
-												<p>
-													By signing up, I agree to{' '}
-													<Link to="#" className="text-primary mt-2 mr-2">
-														terms
-													</Link>
-												</p>
-											</div>
-											<br />
-
-											<div className="mt-4 rounded" />
-											<Button variant="contained" color="primary">
-												Sign Up
-											</Button>
-											<br />
-											<br />
-											<p>
-												Have an account?{' '}
-												<Link to="#" className="text-primary mt-2 mr-2">
-													Sign In
-												</Link>
-											</p>
-										</label>
-									</div>
-								</Col>
-							</Row>
-						</Container>
-					</section>
-				</Form>
-			</div>
-		</div>
+		<Typography variant="body2" color="textSecondary" align="center">
+			{' © Confyde'}
+			<Link color="inherit" href="#" /> {new Date().getFullYear()}
+			{'.'}
+		</Typography>
 	);
 }
 
-export default Login;
+const useStyles = makeStyles((theme) => ({
+	paper: {
+		marginTop: theme.spacing(8),
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: 'center'
+	},
+	avatar: {
+		margin: theme.spacing(1),
+		backgroundColor: theme.palette.primary.main
+	},
+	form: {
+		width: '100%', // Fix IE 11 issue.
+		marginTop: theme.spacing(1)
+	},
+	submit: {
+		margin: theme.spacing(3, 0, 2)
+	}
+}));
+
+export default function SignIn() {
+	const classes = useStyles();
+
+	return (
+		<Container component="main" maxWidth="xs">
+			<CssBaseline />
+			<div className={classes.paper}>
+				<Avatar className={classes.avatar}>C</Avatar>
+				<Typography component="h1" variant="h5">
+					Login
+				</Typography>
+				<p>
+					Are you a doctor? {''}
+					<Link href="#" variant="body2">
+						Login
+					</Link>
+				</p>
+				<form className={classes.form} noValidate>
+					<TextField
+						EmailIcon
+						fontSize="small"
+						variant="outlined"
+						margin="normal"
+						required
+						fullWidth
+						id="mobile"
+						label="Mobile Number"
+						name="mobile"
+						autoComplete="mobile number"
+						autoFocus
+					/>
+					<TextField
+						LockIcon
+						fontSize="big"
+						variant="outlined"
+						margin="normal"
+						required
+						fullWidth
+						name="password"
+						label="Password"
+						type="password"
+						id="password"
+						autoComplete="current-password"
+					/>
+					<Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>
+						Sign Up
+					</Button>
+					<Grid container>
+						<Grid item xs />
+						<Grid item />
+					</Grid>
+				</form>
+				<p>
+					Have an account? {''}
+					<Link href="#" variant="body2">
+						Sign In
+					</Link>
+				</p>
+			</div>
+			<Box mt={8}>
+				<Confyde />
+			</Box>
+		</Container>
+	);
+}
