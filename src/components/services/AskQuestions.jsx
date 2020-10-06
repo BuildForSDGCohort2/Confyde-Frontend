@@ -30,7 +30,7 @@ class AskQuestions extends Component {
 										<Link
 											to="#"
 											className="btn btn-primary mt-2 mr-2"
-											style={{ borderRadius: '20px' }}
+											style={{ borderRadius: '20px', boxShadow: 'none'}}
 										>
 											View All Specialties
 										</Link>
