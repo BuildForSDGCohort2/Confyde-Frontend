@@ -60,7 +60,7 @@ class Services extends Component {
 					<Row className="mt-4">
 						<Col lg={12}>
 							<div className="text-center">
-								<Link to="#" className="btn btn-primary">
+								<Link to="#" className="btn btn-primary" style={{boxShadow: 'none'}}>
 									View more
 								</Link>
 							</div>

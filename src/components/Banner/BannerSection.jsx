@@ -22,7 +22,7 @@ class BannerSection extends Component {
 								<p>Get Affordable quality health care. Speak to a doctor.</p>
 
 								<div className="mt-4 rounded">
-									<Link to="#" className="btn btn-primary mt-2 mr-2" style={{ borderRadius: '20px' }}>
+									<Link to="#" className="btn btn-primary mt-2 mr-2"  style={{ borderRadius: '20px', boxShadow: 'none'}}>
 										Getting Started
 									</Link>
 								</div>
