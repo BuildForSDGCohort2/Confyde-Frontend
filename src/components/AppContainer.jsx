@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import NavbarContainer from './Navbar/NavbarContainer';
 import Login from '../pages/Login';
-import Dashboard from '../pages/Dashboard';
+//import UserProfile from '../pages/UserProfile';
 import BannerSection from '../components/Banner/BannerSection';
 import GettingStarted from './../pages/GettingStarted';
 import Services from './../components/services/Services';
@@ -39,7 +39,7 @@ class AppContainer extends Component {
 				<Switch>
 					<Route path="/login" component={Login} />
 					<Route path="/getting-started" component={GettingStarted} />
-					<Route path="/dashboard" component={Dashboard} />
+					
 					<Redirect from="/" exact to="home" />
 				</Switch>
 
